@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduardoo's Portfolio</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fade-in {
+        animation: fadeIn 1s ease-in forwards;
+        opacity: 0;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header
+      class="bg-blue-600 text-white p-6 flex justify-between items-center"
+    >
+      <h1 class="text-3xl font-bold">Eduardo Lulo</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About Me</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6 max-w-4xl mx-auto space-y-12">
+      <!-- About Me -->
+      <section id="about" class="fade-in">
+        <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+        <p>
+          Hello! I'm Eduardo, and this is my portfolio. I am learning web
+          development using Vanilla JS and Tailwind CSS. I enjoy creating modern
+          and clean interfaces.
+        </p>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="fade-in">
+        <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+            <p>
+              Brief description of Project 1. You can add links or screenshots
+              here.
+            </p>
+          </div>
+          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+            <p>
+              Brief description of Project 2. This project uses Vanilla JS and
+              Tailwind.
+            </p>
+          </div>
+          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+            <p>Another interesting project to showcase your skills.</p>
+          </div>
+          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Project 4</h3>
+            <p>And so on, add all the projects you want to display.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="fade-in">
+        <h2 class="text-2xl font-semibold mb-2">Contact</h2>
+        <form class="bg-white p-6 rounded shadow space-y-4">
+          <div>
+            <label class="block font-medium mb-1">Name</label>
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label class="block font-medium mb-1">Email</label>
+            <input
+              type="email"
+              placeholder="email@example.com"
+              class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label class="block font-medium mb-1">Message</label>
+            <textarea
+              placeholder="Your message"
+              class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          >
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center">
+      © 2025 Eduardo Lulo
+    </footer>
+
+    <!-- Optional JS for fade-in animations -->
+    <script>
+      const faders = document.querySelectorAll(".fade-in");
+      const appearOptions = { threshold: 0.1 };
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.classList.add("animate-fadeIn");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, appearOptions);
+
+      faders.forEach((fader) => appearOnScroll.observe(fader));
+    </script>
+  </body>
+</html>
