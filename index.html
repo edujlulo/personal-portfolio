@@ -49,9 +49,43 @@
         <h2 class="text-2xl font-semibold mb-4">Projects</h2>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
-            <h3 class="text-xl font-semibold mb-2">Project 1</h3>
-            <p>Brief description of Project 1.</p>
+            <h3 class="text-xl font-semibold mb-2">Task Manager</h3>
+            <p class="mb-2">
+              A React-based task management app to create, edit, and delete
+              tasks. Built with React, HTML, CSS, and JavaScript.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >React</span
+              >
+              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >HTML</span
+              >
+              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >CSS</span
+              >
+              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <a
+                href="TU_LINK_NETLIFY"
+                target="_blank"
+                class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+              >
+                View Project
+              </a>
+              <a
+                href="TU_LINK_GITHUB"
+                target="_blank"
+                class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+              >
+                Code
+              </a>
+            </div>
           </div>
+
           <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
             <h3 class="text-xl font-semibold mb-2">Project 2</h3>
             <p>Brief description of Project 2.</p>
@@ -100,18 +134,22 @@
             </svg>
             LinkedIn
           </a>
+
           <a
-            href="/path-to-your-cv.pdf"
+            href="/CV Eduardo Lulo.pdf"
             target="_blank"
-            class="flex items-center justify-center px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-400 transition"
+            rel="noopener noreferrer"
+            class="bg-emerald-700 text-white px-4 py-2 rounded hover:bg-emerald-600 transition"
           >
-            <!-- Icon CV / Document simple -->
-            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M6 2h9l5 5v15a1 1 0 01-1 1h-13a1 1 0 01-1-1v-19a1 1 0 011-1zm9 6h5l-5-5v5z"
-              />
-            </svg>
-            Download CV
+            View CV (PDF)
+          </a>
+
+          <a
+            href="/CV Eduardo Lulo.pdf"
+            download
+            class="bg-emerald-700 text-white px-4 py-2 rounded hover:bg-emerald-600 transition"
+          >
+            Download CV (PDF)
           </a>
         </div>
       </section>
