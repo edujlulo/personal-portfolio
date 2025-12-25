@@ -20,15 +20,22 @@
   </head>
   <body class="bg-gray-100 text-gray-800">
     <!-- Header -->
-    <header
-      class="bg-blue-800 text-white p-6 flex justify-between items-center"
-    >
-      <h1 class="text-3xl font-bold">Eduardo Lulo</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:underline">About Me</a>
-        <a href="#projects" class="hover:underline">Projects</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
+
+    <header class="bg-blue-800 text-white p-6">
+      <div
+        class="max-w-4xl mx-auto flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2"
+      >
+        <div>
+          <h1 class="text-3xl font-bold">Eduardo Lulo</h1>
+          <p class="text-blue-200 text-base">Junior Front-End Web Developer</p>
+        </div>
+
+        <nav class="space-x-4 text-lg">
+          <a href="#about" class="hover:underline">About Me</a>
+          <a href="#projects" class="hover:underline">Projects</a>
+          <a href="#contact" class="hover:underline">Get in Touch</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -49,152 +56,224 @@
         <h2 class="text-2xl font-semibold mb-4">Projects</h2>
         <div class="grid md:grid-cols-2 gap-6">
           <!-- Project 1: Task Manager -->
-          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
-            <h3 class="text-xl font-semibold mb-2">Task Manager</h3>
-            <p class="mb-2">
-              A React-based task management app to create, edit, and delete
-              tasks. Built with React, HTML, CSS, and JavaScript.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-2">
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >React</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >HTML</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >CSS</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >JavaScript</span
-              >
-            </div>
-            <div class="flex gap-2">
-              <a
-                href="TU_LINK_NETLIFY_TASK_MANAGER"
-                target="_blank"
-                class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
-              >
-                View Project
-              </a>
-              <a
-                href="TU_LINK_GITHUB_TASK_MANAGER"
-                target="_blank"
-                class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
-              >
-                Code
-              </a>
+
+          <div
+            class="bg-white rounded shadow hover:shadow-lg transition overflow-hidden"
+          >
+            <!-- Project image placeholder -->
+            <div class="w-full h-40 bg-red-500"></div>
+
+            <!-- Content -->
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Task Manager</h3>
+
+              <p class="mb-3 text-sm text-gray-700">
+                A React-based task management app to create, edit, and delete
+                tasks. Built with React, HTML, CSS, and JavaScript.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  React
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  HTML
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  CSS
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="TU_LINK_NETLIFY_TASK_MANAGER"
+                  target="_blank"
+                  class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+                >
+                  View Project
+                </a>
+                <a
+                  href="TU_LINK_GITHUB_TASK_MANAGER"
+                  target="_blank"
+                  class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+                >
+                  Code
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Project 2: Currency Converter -->
-          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
-            <h3 class="text-xl font-semibold mb-2">Currency Converter</h3>
-            <p class="mb-2">
-              A simple web app to convert currencies using HTML, CSS, and
-              JavaScript.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-2">
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >HTML</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >CSS</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >JavaScript</span
-              >
-            </div>
-            <div class="flex gap-2">
-              <a
-                href="TU_LINK_NETLIFY_CURRENCY"
-                target="_blank"
-                class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
-              >
-                View Project
-              </a>
-              <a
-                href="TU_LINK_GITHUB_CURRENCY"
-                target="_blank"
-                class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
-              >
-                Code
-              </a>
+          <div
+            class="bg-white rounded shadow hover:shadow-lg transition overflow-hidden"
+          >
+            <!-- Project image placeholder -->
+            <div class="w-full h-40 bg-red-500"></div>
+
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Currency Converter</h3>
+
+              <p class="mb-3 text-sm text-gray-700">
+                A simple web app to convert currencies using HTML, CSS, and
+                JavaScript.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  HTML
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  CSS
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="TU_LINK_NETLIFY_CURRENCY"
+                  target="_blank"
+                  class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+                >
+                  View Project
+                </a>
+                <a
+                  href="TU_LINK_GITHUB_CURRENCY"
+                  target="_blank"
+                  class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+                >
+                  Code
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Project 3: Basic Calculator -->
-          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
-            <h3 class="text-xl font-semibold mb-2">Basic Calculator</h3>
-            <p class="mb-2">
-              A simple calculator web app to perform basic arithmetic
-              operations. Built with HTML, CSS, and JavaScript.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-2">
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >HTML</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >CSS</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >JavaScript</span
-              >
-            </div>
-            <div class="flex gap-2">
-              <a
-                href="TU_LINK_NETLIFY_CALCULATOR"
-                target="_blank"
-                class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
-              >
-                View Project
-              </a>
-              <a
-                href="TU_LINK_GITHUB_CALCULATOR"
-                target="_blank"
-                class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
-              >
-                Code
-              </a>
+          <div
+            class="bg-white rounded shadow hover:shadow-lg transition overflow-hidden"
+          >
+            <!-- Project image placeholder -->
+            <div class="w-full h-40 bg-red-500"></div>
+
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Basic Calculator</h3>
+
+              <p class="mb-3 text-sm text-gray-700">
+                A simple calculator web app to perform basic arithmetic
+                operations. Built with HTML, CSS, and JavaScript.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  HTML
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  CSS
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="TU_LINK_NETLIFY_CALCULATOR"
+                  target="_blank"
+                  class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+                >
+                  View Project
+                </a>
+                <a
+                  href="TU_LINK_GITHUB_CALCULATOR"
+                  target="_blank"
+                  class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+                >
+                  Code
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Project 4: Rock Paper Scissors Game -->
-          <div class="p-4 bg-white rounded shadow hover:shadow-lg transition">
-            <h3 class="text-xl font-semibold mb-2">Rock Paper Scissors Game</h3>
-            <p class="mb-2">
-              An interactive Rock Paper Scissors game built with React, HTML,
-              CSS, and JavaScript.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-2">
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >React</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >HTML</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >CSS</span
-              >
-              <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
-                >JavaScript</span
-              >
-            </div>
-            <div class="flex gap-2">
-              <a
-                href="TU_LINK_NETLIFY_RPS"
-                target="_blank"
-                class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
-              >
-                View Project
-              </a>
-              <a
-                href="TU_LINK_GITHUB_RPS"
-                target="_blank"
-                class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
-              >
-                Code
-              </a>
+          <div
+            class="bg-white rounded shadow hover:shadow-lg transition overflow-hidden"
+          >
+            <!-- Project image placeholder -->
+            <div class="w-full h-40 bg-red-500"></div>
+
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">
+                Rock Paper Scissors Game
+              </h3>
+
+              <p class="mb-3 text-sm text-gray-700">
+                An interactive Rock Paper Scissors game built with React, HTML,
+                CSS, and JavaScript.
+              </p>
+
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  React
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  HTML
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  CSS
+                </span>
+                <span
+                  class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  href="TU_LINK_NETLIFY_RPS"
+                  target="_blank"
+                  class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+                >
+                  View Project
+                </a>
+                <a
+                  href="TU_LINK_GITHUB_RPS"
+                  target="_blank"
+                  class="px-3 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+                >
+                  Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
