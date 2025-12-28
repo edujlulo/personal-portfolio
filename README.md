@@ -2,7 +2,7 @@
 
 Welcome to my **personal portfolio**! This repository showcases my work as a **Junior Front-End Developer**, highlighting projects built with **HTML, CSS, Tailwind CSS, JavaScript, and React**.
 
-🔗 Live Portfolio: <a href="https://eduardo-lulo-portfolio.netlify.app/" target="_blank">https://eduardo-lulo-portfolio.netlify.app/</a>
+🔗 Live Portfolio: [eduardo-lulo-portfolio.netlify.app](https://eduardo-lulo-portfolio.netlify.app/)
 
 ---
 
