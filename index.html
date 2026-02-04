@@ -350,6 +350,12 @@
 
     <!-- Fade-in JS -->
     <script>
+      // Force scroll to top on page reload
+      window.addEventListener("beforeunload", () => {
+        window.scrollTo(0, 0);
+      });
+
+      // Fade-in animations
       const faders = document.querySelectorAll(".fade-in");
       const appearOptions = { threshold: 0.1 };
       const appearOnScroll = new IntersectionObserver((entries, observer) => {
