@@ -7,9 +7,10 @@ async function loadMainProject(path) {
     }
 
     const html = await response.text();
-    document
-      .getElementById("main-projects-container")
-      .insertAdjacentHTML("beforeend", html);
+
+    const container = document.getElementById("main-projects-container");
+
+    container.insertAdjacentHTML("beforeend", html);
   } catch (error) {
     console.error(error);
   }
