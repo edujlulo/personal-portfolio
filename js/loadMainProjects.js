@@ -17,6 +17,7 @@ async function loadMainProject(path) {
 }
 
 async function initProjects() {
+  await loadMainProject("components/project-echosoft.html");
   await loadMainProject("components/project-samivet.html");
 }
 
